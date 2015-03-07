@@ -13,6 +13,7 @@
 
 /* Import fonts */
 @import url(http://fonts.googleapis.com/css?family=Raleway:900,700,400);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300);
 
 * { 
 	margin: 0;
@@ -57,6 +58,7 @@ body {
 }
 .centered {text-align: center}
 .mt {margin-top: 50px;}
+.mt2 {margin-top: 100px;}
 .mb {margin-bottom: 50px;}
 .mtb {margin-top: 50px; margin-bottom: 50px;}
 .mtb2 { margin-top: 100px; margin-bottom: 100px;}
@@ -182,7 +184,7 @@ input {
 
 /* HEADER SECTION */
 #h {
-	background: url(../img/header.jpg) no-repeat center top;
+	background: url(../img/header_bg.jpg) no-repeat center top;
 	padding-top: 10px;
 	text-align:center;
 	background-attachment: relative;
@@ -202,10 +204,12 @@ input {
 }
 
 #h h1 {
-	color: white;
-	font-weight: 900;
+	color: #f9ce59;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 100;
 	font-size: 70px;
-	letter-spacing: 5px;
+	letter-spacing: 2px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
 }
 
 #h h3 {
@@ -215,6 +219,7 @@ input {
 
 #h img {
 	padding-bottom: 0px;
+    margin-bottom: -80px;
 }
 
 /* White Section */
