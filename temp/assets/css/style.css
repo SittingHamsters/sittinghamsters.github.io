@@ -21,7 +21,7 @@
     font-family: 'Raleway', sans-serif;
 } 
 body { 
-	background: #fff; 
+	background: #fff;
 	margin: 0; 
 	color: #5a5a5a;
 }
@@ -180,6 +180,18 @@ input {
 .btn-white:hover {
 	background: #2f2f2f;
 	color: white;
+}
+
+/* NAVIGATION */
+.navigation .navbar-brand {
+    color: #00a4a2;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.navigation .navbar-nav li a {
+    font-size: 18px;
 }
 
 /* HEADER SECTION */
