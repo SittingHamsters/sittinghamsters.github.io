@@ -194,6 +194,10 @@ input {
     font-size: 18px;
 }
 
+.describe-image {
+    /*max-height: 400px;*/
+}
+
 /* HEADER SECTION */
 #h {
 	background: url(../img/header_bg.jpg) no-repeat center top;
@@ -264,7 +268,7 @@ input {
 }
 
 #bg .col-md-6 {
-    padding-right: 0px;
+    padding-left: 0px;
 }
 
 #bg h4 {
