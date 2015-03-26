@@ -255,17 +255,15 @@
 .country-select .np{background-position:-208px -132px}
 .country-select .ch{background-position:-208px -143px}
 
-
 .country-select {
 	position:relative;
-	display:inline-block; 
+	display:inline-block;
 }
 .country-select * {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
 .country-select .hide{display:none}
 .country-select .v-hide{visibility:hidden}
 .country-select input {
@@ -276,13 +274,9 @@
 }
 .country-select .flag-dropdown {
 	position: absolute;
-	color: black;
 	top: 0;
-	bottom: 0;
+	bottom: 0
 }
-
-.country-select-input {width: 100%;}
-
 .country-select .flag-dropdown:hover{cursor:pointer}
 .country-select .flag-dropdown:hover .selected-flag {
 	background-color: #000;
@@ -319,17 +313,16 @@
 	border-bottom: 4px solid #555
 }
 .country-select .country-list {
-	list-style: none;
-	font-color:black;
-	position: absolute;
 	text-align: left;
+	list-style: none;
+	position: absolute;
 	z-index:2; padding:0;
 	margin: 0 0 0 -1px;
 	box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
-	background-color: white;
+	background-color: black;
 	border: 1px solid #ccc;
 	width: 250px;
-	max-height: 200px;			//velkost dropdownu
+	max-height: 200px;
 	overflow-y: scroll
 }
 .country-select .country-list .flag {
