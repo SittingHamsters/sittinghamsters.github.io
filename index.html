@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Real-time posture tracking system with intelligent notifications and awareness about the user's working environment, saving people from back pain.">
-    <meta name="keywords" content="spine, health, startup, kinect, webcam, notifications, imagine cup">
+    <meta name="description" content="Real-time posture tracking application with intelligent notifications and awareness about the user's working environment, saving people from back pain.">
+    <meta name="keywords" content="back pain, neck pain, spine, health, kinect, webcam, notifications, imagine cup, posture, posture tracking, correct posture">
     <meta name="author" content="Sitting Hamsters">
-    <link rel="icon" href="assets/img/favicon.ico">
+    <link href="assets/img/favicon.png" rel="shortcut icon" type="image/x-icon">
 
-    <title>Spine Hero - Real-time posture tracking system</title>
+    <title>Spine Hero - Real-time posture tracking application</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -17,7 +17,6 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/custom-animations.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/img/favicon.png" rel="shortcut icon" type="image/x-icon">
 
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -73,11 +72,25 @@
                     <h3>Upgrade your posture - let us take care of your sitting behavior!</h3>
                 </div>
                 <div id="video" class="col-md-12 mt">
-                    <img src="assets/img/app-play.png" id="screen" class="img-responsive aligncenter" alt="Spine Hero dashboard screen" data-effect="slide-bottom" style="cursor: pointer">
+                    <img src="assets/img/app-play2.png" class="img-responsive aligncenter" alt="Spine Hero dashboard screen" data-effect="slide-bottom" style="cursor: pointer"
+                            onclick="$('#youtubeModal').modal('show'); ga('send', 'event', 'video', 'show', 'landing_top');">
                 </div>
             </div>
         </div><! --/container -->
     </div><! --/h -->
+
+    <!-- Youtube Modal -->
+    <div class="modal fade" id="youtubeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XQ_NEuqWQ-s" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <! -- ********** IMPACT ********** -->
     <a  name="impact"></a>
@@ -85,8 +98,11 @@
         <div class="row nopadding">
             <div class="col-md-5 col-md-offset-1 mt">
                 <h4>Better health = better life! </h4>
-                <p>Wrong sitting behind a computer causes a lot of problems like back pain, neck pain and headache.* Spine Hero offers an innovative solution for this area!</p>
-                <p>We use webcam and depth camera (like Microsoft Kinect sensor) to detect your sitting posture. To bring you the best results, we are also cooperating with physiotherapists.</p>
+                <p>Wrong sitting in front of a computer causes a lot of problems like back pain, neck pain and headaches.*
+                    Spine Hero offers an innovative solution for this area!</p>
+                <p>It uses webcam and/or depth camera (like Microsoft Kinect sensor) to detect your sitting posture.
+                    When you sit incorrectly, it will simply notify you.
+                    To bring you the best results, we have developed SpineHero in cooperation with physiotherapists.</p>
             </div>
 
             <div class="col-md-6">
@@ -105,7 +121,8 @@
             </div>
             <div class="col-md-5 mt">
                 <h4>Fluent work thanks to smart timing of notifications! </h4>
-                <p>Our goal is to not interrupt you. Notifications are showed only when we are sure that they will not distract you.</p>
+                <p>Our goal is to not interrupt you. Notifications are showed only when we are sure that they will not distract you.
+                    For example, we will not notify you, when you will write your email.</p>
                 <p>They are also designed in the way that they let you focus on your important tasks.</p>
             </div>
 
@@ -137,45 +154,15 @@
     <div id="s">
         <div class="row">
             <div class="col-md-8 col-md-offset-2 centered">
-                <h4 class="mb">Are you interested? Subscribe now and get 50% discount ticket!</h4>
-                <form class="form-inline"
-                      action="https://docs.google.com/forms/d/1uKzaZvR8rXgOTAPn_kkqQmNhB0ZCH4ggDxxRlR3rjTA/formResponse"
-                      method="post"
-                      target="invites_iframe"
-                      onsubmit="$('#myModal').modal('show'); ga('send', 'event', 'button', 'click', 'subscription_bottom');">
-                    <div class="form-group">
-                        <input type="email" class="form-control subscribe-input" placeholder="Your e-mail" name="entry.649976513" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control subscribe-input" placeholder="Country" name="entry.496960986" required>
-                    </div>
-                    <!--<button type="submit" class="btn btn-default">Send invitation</button>-->
-                    <button class='btn btn-lg btn-info btn-sub subscribe-submit' type="submit">
-                    Yes, please.
-                    </button>
-                </form>
+                <h4 class="mb">Subscribe to be notified of launch and get 50% discount ticket!</h4>
+                <a class="btn btn-lg btn-info btn-sub subscribe-submit" role="button"
+                   href="subscribe1.html" onclick="ga('send', 'event', 'subscription', 'click', 'landing_bottom');">
+                    Subscribe now
+                </a>
             </div>
 
         </div><! --/row -->
     </div><! --/curious -->
-
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Thank you!</h4>
-                </div>
-                <div class="modal-body">
-                    We will send you the discount ticket to your email address.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <! -- ********** CREDITS ********** -->
     <div id="c">
@@ -272,9 +259,20 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/retina-1.1.0.js"></script>
     <script src="assets/js/jquery.unveilEffects.js"></script>
-    <script src="assets/js/video.js"></script>
 
     <script>
+        /* Stop youtube video after hiding modal + autoplay when modal shows*/
+        $('#youtubeModal').on('hidden.bs.modal', function () {
+            var source = $("#youtubeModal iframe").attr("src");
+            $("#youtubeModal iframe").attr("src", source.substring(0, source.length - "?autoplay=1".length));
+        });
+
+        $('#youtubeModal').on('shown.bs.modal', function () {
+            var source = $("#youtubeModal iframe").attr("src");
+            $("#youtubeModal iframe").attr("src", source + "?autoplay=1");
+        });
+
+        /* Google analytics */
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -282,7 +280,6 @@
 
         ga('create', 'UA-60616949-1', 'auto');
         ga('send', 'pageview');
-
     </script>
 </body>
 </html>
