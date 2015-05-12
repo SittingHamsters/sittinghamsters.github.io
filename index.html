@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Real-time posture tracking system with intelligent notifications and awareness about the user's working environment, saving people from back pain.">
-    <meta name="keywords" content="back pain, neck pain, spine, health, kinect, webcam, notifications, imagine cup">
+    <meta name="description" content="Real-time posture tracking application with intelligent notifications and awareness about the user's working environment, saving people from back pain.">
+    <meta name="keywords" content="back pain, neck pain, spine, health, kinect, webcam, notifications, imagine cup, posture, posture tracking, correct posture">
     <meta name="author" content="Sitting Hamsters">
     <link href="assets/img/favicon.png" rel="shortcut icon" type="image/x-icon">
 
-    <title>Spine Hero - Real-time posture tracking system</title>
+    <title>Spine Hero - Real-time posture tracking application</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -264,7 +264,7 @@
         /* Stop youtube video after hiding modal + autoplay when modal shows*/
         $('#youtubeModal').on('hidden.bs.modal', function () {
             var source = $("#youtubeModal iframe").attr("src");
-            $("#youtubeModal iframe").attr("src", source.substring(0, source.length - 11));
+            $("#youtubeModal iframe").attr("src", source.substring(0, source.length - "?autoplay=1".length));
         });
 
         $('#youtubeModal').on('shown.bs.modal', function () {
