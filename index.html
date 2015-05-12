@@ -73,7 +73,7 @@
                 </div>
                 <div id="video" class="col-md-12 mt">
                     <img src="assets/img/app-play2.png" class="img-responsive aligncenter" alt="Spine Hero dashboard screen" data-effect="slide-bottom" style="cursor: pointer"
-                            onclick="$('#youtubeModal').modal('show');">
+                            onclick="$('#youtubeModal').modal('show'); ga('send', 'event', 'video', 'show', 'landing_top');">
                 </div>
             </div>
         </div><! --/container -->
@@ -156,31 +156,13 @@
             <div class="col-md-8 col-md-offset-2 centered">
                 <h4 class="mb">Subscribe to be notified of launch and get 50% discount ticket!</h4>
                 <a class="btn btn-lg btn-info btn-sub subscribe-submit" role="button"
-                   href="subscribe1.html">
+                   href="subscribe1.html" onclick="ga('send', 'event', 'subscription', 'click', 'landing_bottom');">
                     Subscribe now
                 </a>
             </div>
 
         </div><! --/row -->
     </div><! --/curious -->
-
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Thank you!</h4>
-                </div>
-                <div class="modal-body">
-                    We will send you the discount ticket to your email address.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <! -- ********** CREDITS ********** -->
     <div id="c">
